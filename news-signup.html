@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head>
+        <title> News Signup </title>
+        <link rel="stylesheet" href="styles/news-grid.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1 class="logo">  NEWS </h1>
+            <a class="nav-link" href="#"> Signin</a>
+            <a class="nav-link" href="news-signup.html"> Signup</a>
+        </div>
+        <div class="signup-container">
+                 <h2 class="heading"> Sign up </h2>
+            <form action ="http://jkorpela.fi/cgi-bin/echo.cgi">
+                <div class="form-element-container">
+                <div class="form-element"> 
+                    <label for= "name" > Name </label> 
+                    <input type = "Text" Placeholder= "Enter Name" Value= " John" id= "name" name="name">
+                </div>
+                <div class="form-element"> 
+                    <label for= "email" > Email </label>
+                    <input type = "Text" Placeholder= "Enter Email" Value=" John@gmail.com" id= "Email" name="email">
+                </div>
+                <div class="form-element"> 
+                    <label for= "Password" > Password </label>
+                    <input type = "Password" Placeholder= "Enter Password" id= "Password" name="password">
+                </div>
+                <div class="form-element"> 
+                    <label for= "Favorite color" > Favorite color </label>
+                    <select id ="color" name="color">
+                        <option> Empty </option>
+                        <option value="G"> Green </option>
+                        <option value="R" >  Red </option>
+                        <option value="B" selected> Blue </option>
+                    </select>                
+                </div>
+                <div class="form-element">
+                    <label> Gender </label> 
+                    <input type="radio" name="gender"  id="Male" value="M">
+                    <label class="label-radio" for = "Male"> Male </label>
+                    <input type="radio" name="gender" id= "Female" value="F" checked >
+                    <label class="label-radio" for ="Female"> Female </label>
+                </div>
+                <div class="form-element">
+                    <label for="student">  I am a Student </label>
+                    <input type="Checkbox" id= "student" name="student" value="Y" checked>
+                </div>
+             </div>
+                <div class="form-element">
+                        <label for="about">About me </label>
+                        <textarea id="about" name="about">I want to become Police        
+                        </textarea>
+                    </div>
+                <div class="form-element">
+                        <input type="submit" value="Signup">
+                    </div>                
+            </form>
+        </div>
+        <div Class="footer">
+            Copy rights
+        </div>
+    </body>
+</html>
